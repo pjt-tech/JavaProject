@@ -1,0 +1,10 @@
+package chap07_array;
+
+public class Arr1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
