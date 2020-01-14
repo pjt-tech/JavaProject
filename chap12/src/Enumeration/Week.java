@@ -9,5 +9,11 @@ public enum Week {
 		FRIDAY,
 		SATURDAY,
 		SUNDAY
+}
 
+public enum Fruit {
+
+		APPLE,
+		BANANA,
+		ORANGE
 }
