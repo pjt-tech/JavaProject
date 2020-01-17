@@ -7,9 +7,8 @@ public class Console_String {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
-		String str;
-		String str1;
-		String str2 = new String();
+		String str,str1,str2;
+	
 		
 		System.out.print("문자열 1을 입력 : " );
 		str = s.nextLine();
