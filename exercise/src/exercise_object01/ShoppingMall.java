@@ -1,7 +1,7 @@
 package exercise_object01;
 
 public class ShoppingMall {
-
+	
 	public static void main(String[] args) {
 	Person person =  new Person("홍길동","abc123","서울시 영등포구 여의도동 20번지","PD0345-12","2018년 3월 12일",201803120001L);
 		person.PersonResult();
