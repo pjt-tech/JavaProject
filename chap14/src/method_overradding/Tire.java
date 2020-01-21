@@ -4,7 +4,7 @@ public class Tire {
 	
 	public int maxRotaion;
 	public int accumulatedRotation = 0;
-	public String location;
+	public String location; 
 	
 	public Tire(int maxRotaion, String location) {
 		this.maxRotaion = maxRotaion;
