@@ -20,7 +20,19 @@ public class Ex01 {
 		for(int i = 0; i<ko.length; ++i) {
 			   ko[i] = c++;
 			   System.out.print(ko[i]);
+			   //for¹®À» ÀÌ¿ëÇÏ¿© ¹è¿­¾È¿¡ °ªÀ» ÀÔ·Â ÈÄ Ãâ·Â
+			  
 		}
+		 Person[] pa = new Person[5];
+		 pa[0] = new Person("\nÈ«±æµ¿",22);
+		 pa[1] = new Person("±èÃ¶¼ö",32);
+		 pa[2] = new Person("ÀÌ¿µÈñ",28);
+		 pa[3] = new Person("À±¼öÁö",55);
+		 pa[4] = new Person("±èÁ¤±æ",23);
+		 
+		 for(int i=0; i<pa.length; ++i) {
+			 pa[i].disp();
+		 }
 	}
 
 }
