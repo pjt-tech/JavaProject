@@ -23,6 +23,8 @@ public class Ex01 {
 			   //for문을 이용하여 배열안에 값을 입력 후 출력
 			  
 		}
+		
+		//객체 5개 공간의 배열을 생성하겠다.
 		 Person[] pa = new Person[5];
 		 pa[0] = new Person("\n홍길동",22);
 		 pa[1] = new Person("김철수",32);
