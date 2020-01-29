@@ -12,5 +12,12 @@ public class RemoteControl_Ex {
 		rc.turnOn();
 		rc.setVolume(12);
 		rc.turnOff();
+		
+		SmartTV tv = new SmartTV();
+		rc = tv;
+		Search sc = tv;
+		rc.turnOn();
+		sc.search("https://www.naver.com");
+		rc.turnOff();
 	}
 }
