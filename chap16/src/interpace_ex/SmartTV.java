@@ -32,4 +32,14 @@ public class SmartTV implements RemoteControl, Search {
 		
 	}
 
+	@Override
+	public void setMute(boolean mute) {
+		if(mute) {
+			System.out.println("SmartTV 무음 처리합니다.");
+		}else
+			System.out.println("SmartTV 무음 해제합니다.");
+	
+	}
+	
+
 }
