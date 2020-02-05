@@ -4,6 +4,8 @@ public class Student {
 	String studentName;
 	int grade,money;
 	
+	
+	//ÇÐ»ý°´Ã¼
 	public Student(String Name,int money) {
 		this.studentName = Name;
 		this.money = money;

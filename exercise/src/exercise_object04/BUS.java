@@ -5,13 +5,16 @@ public class BUS {
 	int passengerCount;
 	int money;
 	
+	//¹ö½º°´Ã¼
 	public BUS(int busNumber) {
 		this.busNumber = busNumber;
+		
 	}
 	
 	public void take(int money) {
 		this.money +=money;
 		passengerCount++;
+		
 	}
 	
 	public void showInfo() {

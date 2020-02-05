@@ -5,6 +5,8 @@ public class Subway {
 	int passengerCount;
 	int money;
 	
+	
+	//ÁöÇÏÃ¶°´Ã¼
 	public Subway(String subwayNumber) {
 		this.subwayNumber = subwayNumber;
 	}
