@@ -43,7 +43,7 @@ public class FriendInfoHandler {
 		}else {
 			//대딩친구라면
 			System.out.print("학과 :"); major = sc.nextLine();
-			addFriendInfo(new HighFriend(name, phoneNum, addr, major));
+			addFriendInfo(new UnivFriend(name, phoneNum, addr, major));
 			
 		}
 		
