@@ -17,10 +17,9 @@ public class BeepPrint implements Runnable{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+
 		}
 		
-	}
-	
-	
+	}	
 
 }
