@@ -30,6 +30,4 @@ public class Rectangle implements Cloneable {
 		return copy;
 	}
 	
-	
-
 }

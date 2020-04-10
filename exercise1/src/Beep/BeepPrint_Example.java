@@ -1,6 +1,6 @@
-package com.cyberkyj.basic;
+package Beep;
 
-import java.awt.*;
+import java.awt.Toolkit;
 
 public class BeepPrint_Example {
 
@@ -12,7 +12,7 @@ public class BeepPrint_Example {
 		Thread thread = new Thread(beepThread); 
 		//thread.start();
 		
-		Thread thread = new Thread(new Runnable() {
+		/*Thread thread = new Thread(new Runnable() {
 
 			@Override
 			public void run() {
@@ -31,10 +31,8 @@ public class BeepPrint_Example {
 			}
 			
 		});
-		
+		*/
 		thread.start();
-		
-		
 		
 		for(int i=0; i<5; i++) {
 			System.out.println("¶ò");
@@ -47,5 +45,4 @@ public class BeepPrint_Example {
 		}
 		
 	}
-
 }

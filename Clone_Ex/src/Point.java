@@ -24,10 +24,4 @@ public class Point implements Cloneable{
 		// TODO Auto-generated method stub
 		return super.clone();
 	}
-	
-	
-	
-	
-	
-
 }
