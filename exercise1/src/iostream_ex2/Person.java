@@ -16,5 +16,4 @@ public class Person implements Serializable {
 	public String toString() {
 		return "이름 : " + name +", 나이 : " + age;
 	}
-
 }
