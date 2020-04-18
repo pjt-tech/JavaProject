@@ -6,13 +6,13 @@ public class BeepPrint_Example {
 
 	public static void main(String[] args) {
 		
-		BeepPrint beepThread = new BeepPrint();
+		//BeepPrint beepThread = new BeepPrint();
 		//beepThread.start();
 		
-		Thread thread = new Thread(beepThread); 
+		//Thread thread = new Thread(beepThread); 
 		//thread.start();
 		
-		/*Thread thread = new Thread(new Runnable() {
+		Thread thread = new Thread(new Runnable() {
 
 			@Override
 			public void run() {
@@ -31,7 +31,7 @@ public class BeepPrint_Example {
 			}
 			
 		});
-		*/
+		
 		thread.start();
 		
 		for(int i=0; i<5; i++) {

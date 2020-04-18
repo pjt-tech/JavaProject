@@ -2,7 +2,7 @@ package yield;
 
 public class Yield_Example {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		ThreadA threadA = new ThreadA();
 		ThreadB threadB = new ThreadB();
 		threadA.start();
@@ -18,12 +18,8 @@ public class Yield_Example {
 		threadA.work=false;
 		threadB.work=true;
 		
-		try {
-			Thread.sleep(1);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		Thread.sleep(1);
 		
 		threadA.work=true;
 		threadB.work=false;
