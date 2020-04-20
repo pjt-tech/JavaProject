@@ -109,7 +109,8 @@ public class BoardSVC {
 		int count = delete(id);
 		if(count>0) {
 			System.out.println(id+"번째 항목이 삭제되었습니다.");
-			
+		}else {
+			System.out.println("항목이 존재하지 않습니다.");
 		}
 	}
 	
@@ -129,4 +130,61 @@ public class BoardSVC {
 		
 	}
 	
+	public void updateArticle(Scanner sc,Connection conn) {
+		this.conn = conn;
+		System.out.println("수정할 글 번호를 입력하세요.");
+		System.out.print("글 번호 : ");
+		int id = sc.nextInt();
+		BoardVO boardVO = getArticle(id);
+		if(boardVO!=null) {
+		System.out.println("수정할  데이터를 입력하세요.");
+		System.out.println("원래 작성자  : " + boardVO.getWriter());
+		System.out.print("수정할 작성자 : " );
+		String writer = sc.next();
+		System.out.println("원래 비밀번호  : " + boardVO.getPasswd());
+		System.out.print("수정할 비밀번호 : " );
+		String passwd = sc.next();
+		System.out.println("원래 이메일  : " + boardVO.getEmail());
+		System.out.print("수정할 이메일 : " );
+		String email = sc.next();
+		System.out.println("원래 제목  : " + boardVO.getSubject());
+		System.out.print("수정할 제목  : " );
+		String subject = sc.next()+sc.nextLine();
+		
+		boardVO.setWriter(writer);
+		boardVO.setPasswd(passwd);
+		boardVO.setEmail(email);
+		boardVO.setSubject(subject);
+		
+		int count = update(boardVO,id);
+		if(count>0) {
+			System.out.println(id+"번째 항목이 수정되었습니다.");
+		}else {
+			System.out.println("항목이 존재하지 않습니다.");
+		}
+		
+		}else{
+			System.out.println("항목이 존재하지 않습니다.");
+		}
+	}	
+	
+	public int update(BoardVO boardVo, int id) {
+		
+		int updateArticle  = 0;
+		PreparedStatement psmt;
+			try {
+				psmt = conn.prepareStatement("update board set writer=?,passwd=?,email=?,subject=? where id=?");
+				psmt.setString(1, boardVo.getWriter());
+				psmt.setString(2, boardVo.getPasswd());
+				psmt.setString(3, boardVo.getEmail());
+				psmt.setString(4, boardVo.getSubject());
+				psmt.setInt(5,id);
+				updateArticle = psmt.executeUpdate();
+				
+			} catch (SQLException e) {
+				System.out.println("항목이 존재하지 않습니다.");
+			}
+			
+			return updateArticle;
+	}
 }

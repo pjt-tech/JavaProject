@@ -43,6 +43,15 @@ public class BoardMain {
 			case "d" : 
 				boardSVC.deleteArticle(sc,conn);
 				break;
+			case "e" : 
+				boardSVC.updateArticle(sc, conn);
+				break;
+			case "f" : 
+				System.out.println("프로그램을 종료합니다.");
+				conn.close();
+				return;
+			default :
+				System.out.println("명령입력이 바르지 않습니다.");
 			}
 		}	
 	}
