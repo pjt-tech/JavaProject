@@ -1,0 +1,2 @@
+module algorism {
+}
