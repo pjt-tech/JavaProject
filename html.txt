@@ -1,0 +1,1 @@
+ul[class=lst_detail_t1] li
