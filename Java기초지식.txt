@@ -43,3 +43,8 @@ else - {조건절이 false일때 실행 }
 -swhitch(성립 조건) case 조건 break로 제어 
 default - else와 같은 기능, 모든조건이 성립되지 않았을 경우.
 
+*논리 연산자(Conditional operator)
+And(&&) - 양쪽이 모두 참인 경우 성립
+or(||) - 둘중 하나라도 참인 경우나 둘다 참인경우 성립
+not(!) - 부정 boolean값을 반대로 바꿈
+연산자 and boolean and 비교 등이 유기적으로 연결되어 하나의 조건문이 완성된다.
