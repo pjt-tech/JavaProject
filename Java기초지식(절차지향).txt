@@ -65,7 +65,9 @@ not(!) - 부정 boolean값을 반대로 바꿈
 return - 메소드종료와 동시에 값을 반환 , 메소드에서는 반드시 return 할 값을 명시해야함
 void - 반환 값 이 없다.
 
-*입력과 출력
-
-
-
+*입력과 출력(IO) - 프로그램으로 값이 들어왔다 프로그램 밖으로 나감
+입력 - Run configurations 인자 값 입력
+출력 -  String[] args , for-each문으로 출력
+프로그램 실행 중 입력을 받기 위해서 Scanner라이브러리를 사용한다.
+프로그램이 종료되지 않고 입력 값 을 받기위해서 while문을 사용한다.
+GUI (Graphic User Interface)  - 그래픽컬한 사용자 조작 수단
